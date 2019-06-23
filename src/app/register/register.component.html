@@ -1,0 +1,58 @@
+<!-- <p>
+  list works!
+  <button (click)="nav()">click me!</button>
+</p> -->
+
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-8 col-xl-6">
+        <div class="row">
+          <div class="col text-center">
+            <h1>Register</h1>
+            <p class="text-h3">Register Yourself ASAP. </p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col mt-4">
+            <!-- <input type="text" [(ngmodel)] = 'users' placeholder="Enter Your Name"> -->
+            <input type="text" [(ngModel)] = 'users.name' class="form-control" placeholder="Enter Your Name" />
+          </div>
+        </div>
+        <div class="row align-items-center mt-4">
+          <div class="col">
+            <input type="email" [(ngModel)] = users.email class="form-control" placeholder="Email" />
+          </div>
+        </div>
+        <div class="row align-items-center mt-4">
+          <div class="col">
+            <input type="phone" [(ngModel)] = users.phone class="form-control" placeholder="Phone no." />
+          </div>
+        </div>
+        <div class="row align-items-center mt-4">
+          <div class="col">
+            <input type="number" [(ngModel)] = users.age class="form-control" placeholder="Age" />
+          </div>
+        </div>
+        <div class="row align-items-center mt-4">
+          <div class="col">
+            <input type="password" [(ngModel)] = users.password class="form-control" placeholder="Password" />
+          </div>
+          <div class="col">
+            <input type="password" [(ngModel)] = users.confirmpassword class="form-control" placeholder="Confirm Password" />
+          </div>
+        </div>
+        <div class="row justify-content-start mt-4">
+          <div class="col">
+            
+
+            <button (click)='OnRegisteration()' class="btn btn-primary mt-4">Submit</button>
+            <button (click)='openlogincomp()' class="btn btn-primary" style="margin-left: 32px;margin-top: 23px;">Login</button>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </div>
+</section>

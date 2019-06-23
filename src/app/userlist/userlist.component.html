@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Users Information</h2>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let user of userlist">
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.age}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,24 @@
+
+<div class="container pt-3">
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-6 col-md-4">
+
+      <div class="card border-info text-center">
+        <div class="card-header">
+          Sign in to continue
+        </div>
+        <div class="card-body">
+          <form class="form-signin">
+            <input type="text" [(ngModel)] = 'user.email' name="email" class="form-control mb-2" placeholder="Email" required autofocus/>
+            <input type="password" [(ngModel)] = 'user.password' name="password" class="form-control mb-2" placeholder="Password" required/>
+            <button (click)='signin()' class="btn btn-lg btn-primary btn-block mb-1">Sign in</button>
+          </form>
+        </div>
+      </div>
+      <div (click)='OpenRegistrationComp()' class="float-right">Create an account </div>
+    </div>
+  </div>
+</div>
+
+
+
